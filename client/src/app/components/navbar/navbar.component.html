@@ -1,33 +1,36 @@
 <div class="contain">
 
-	<label for="check">
-		<i class="fa fa-bars" id="btn"></i>
+	<div class="header">
+		
 		<app-side-bar></app-side-bar>
-	</label>
-
-
-	<a href="#" class="logo">
-		<img src="./../../../assets/images/Logo.png" >
-	</a>
-	
+		
+		<img src="../../../assets/images/Logo.png" alt="">
+		
+	</div>
 
 
 	<div class="navbar">
 		<a [routerLink]="['/home']">home</a>
 		<a [routerLink]="['/gamegenre']">Live</a>
-		<a routerLink="/Category">Category
+
+		<a [routerLink]="['/Category']">Category
 			<i class="fa fa-arrow-circle-down"></i>	
 		</a>
-		<a routerLink="/recharge">
-			recharge
-		</a>
+		
+		<a [routerLink]="['/recharge']">recharge</a>
+		
 		<div class="search-form">
 			<input matInput type="search" placeholder="Tìm kiếm...">
 			<label class='fa fa-search'></label>
 		</div>
+		
 	</div>
 	
+
+
+	
 	<!--icon chưa đăng nhập -->
+	
 	<div class="login">
 		<button mat-button (click)="openDialog()" >Sign in</button>
 		<div class="divine"></div>
@@ -40,10 +43,10 @@
 	
 	<!--icon chưa đăng nhập-->
 
+</div> 
 	
 
 
-</div> 
 
 
 
